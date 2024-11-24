@@ -85,34 +85,54 @@ a {
     border-radius: 5px; /* Facultatif : effet visuel */
 }
 
-.container-navbar {
-    height: 80px;
+/* Styles pour le menu hamburger */
+.navbar-hamburger {
+    display: none; /* Caché par défaut */
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: -4rem;
+}
 
-    @media (max-width: 768px) {
-        height: 60px;
-        font-size: 14px;
+.navbar-hamburger span {
+    display: block;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Affichage sur les petits écrans */
+@media (max-width: 768px) {
+    .navbar-hamburger {
+        display: flex;
     }
 
-    @media (max-width: 1024px) {
-        height: 60px;
-        font-size: 14px;
+    .navbar-navigation {
+        display: none; /* Cacher le menu par défaut */
+        position: absolute;
+        top: 80px; /* En dessous de la barre de navigation */
+        left: 0;
+        background-color: white;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    @media (max-width: 480px) {
-        height: 50px;
-        font-size: 12px;
-        .logo-gedus {
-            width: 90px;
-            height: 50px;
-            padding-left: -2rem;
-        }
+    .navbar-navigation.show {
+        display: flex; /* Afficher le menu lorsqu'il est activé */
+    }
 
-        .navbar-navigation {
-            display: none;
-        }
+    .navbar-navigation a {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
 
-        .menu-toggle {
-            display: flex;
-        }
+    .nav-item {
+        justify-content: center;
     }
 }

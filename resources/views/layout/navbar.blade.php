@@ -1,6 +1,11 @@
 <div class="container-navbar">
     <div class="navbar-logo">
-        <img src="{{ asset("images/logo-gedus.png")}}" alt="" class="logo-gedus">
+        <img src="{{ asset('images/logo-gedus.png') }}" alt="Logo" class="logo-gedus">
+    </div>
+    <div class="navbar-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
     <div class="navbar-navigation">
         <a href="/" class="{{ request()->is('accueil') ? 'active' : '' }}">
@@ -28,7 +33,7 @@
             <div class="sub-categories">
                 <p class="sub-item">USA</p>
                 <p class="sub-item">Togo</p>
-                <p class="sub-item">Cote d'ivoire</p>
+                <p class="sub-item">Cote d'Ivoire</p>
                 <p class="sub-item">Guinée</p>
                 <p class="sub-item">Benin</p>
                 <p class="sub-item">Sénégal</p>
@@ -43,4 +48,3 @@
         </a>
     </div>
 </div>
-

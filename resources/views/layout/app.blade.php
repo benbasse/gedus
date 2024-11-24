@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marck+Script&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <title>GEDUS6ACCUEIL</title>
+    <title>Gedus-Sénégal</title>
 </head>
 
 <body>
@@ -26,12 +26,12 @@
 
 </html>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navbarNavigation = document.querySelector(".navbar-navigation");
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.querySelector('.navbar-hamburger');
+        const navigation = document.querySelector('.navbar-navigation');
 
-        menuToggle.addEventListener("click", () => {
-            navbarNavigation.classList.toggle("open"); // Ajoute ou retire la classe "open"
+        hamburger.addEventListener('click', () => {
+            navigation.classList.toggle('show');
         });
     });
 </script>
