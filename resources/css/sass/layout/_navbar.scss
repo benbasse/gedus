@@ -1,0 +1,118 @@
+.container-navbar {
+    height: 80px;
+    width: 100vw;
+    position: fixed; /* Rendre la barre fixe */
+    top: 0; /* Positionner en haut de la page */
+    left: 0; /* Aligner à gauche */
+    z-index: 1000;
+    background-color: white;
+    font-family: var(--font-family-CE);
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 0px 15px var(--hint-CE);
+}
+a {
+    all: unset;
+}
+.navbar-logo {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 2rem;
+}
+.logo-gedus {
+    width: 100px;
+    border-radius: 10px;
+}
+.navbar-navigation {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(6, 150px);
+    font-weight: bold;
+    gap: 1rem;
+}
+.nav-item {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    &:hover {
+        color: var(--hint);
+    }
+}
+
+.sub-categories {
+    display: none; /* Caché par défaut */
+    position: absolute; /* Positionné par rapport à .header-item */
+    top: 100%; /* Juste en dessous du conteneur parent */
+    left: 0;
+    background-color: white; /* Couleur de fond pour le menu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour l'esthétique */
+    border-radius: 5px;
+    padding: 0.5rem;
+    z-index: 10;
+    width: max-content;
+    font-family: var(--font-family-CE);
+}
+
+.sub-item {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    white-space: nowrap; /* Empêche le texte de déborder */
+    color: var(--color-CE);
+}
+
+.sub-item:hover {
+    background-color: #f0f0f0; /* Change la couleur au survol */
+}
+.nav-item:hover .sub-categories {
+    display: block; /* Affiche les sous-catégories */
+}
+.navbar-navigation a.active {
+    transition: all 0.3s;
+    background-color: #007bff; /* Couleur de fond active */
+    color: white; /* Couleur du texte */
+    border-radius: 5px; /* Facultatif : effet visuel */
+}
+
+.container-navbar {
+    height: 80px;
+
+    @media (max-width: 768px) {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 1024px) {
+        height: 60px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        height: 50px;
+        font-size: 12px;
+        .logo-gedus {
+            width: 90px;
+            height: 50px;
+            padding-left: -2rem;
+        }
+
+        .navbar-navigation {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: flex;
+        }
+    }
+}

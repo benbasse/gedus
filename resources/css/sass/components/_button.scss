@@ -1,0 +1,25 @@
+.btn-contacter {
+    all: unset;
+    width: 200px;
+    place-self: center;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--primary);
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.3s;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.link-btn {
+    display: flex;
+    justify-content: center;
+}

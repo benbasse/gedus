@@ -1,0 +1,274 @@
+.section-apropos {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: 1fr 150px;
+    justify-content: center;
+    margin-top: 5rem;
+    justify-items: center;
+}
+.img-about {
+    margin-top: 1.5rem;
+    width: 1700px;
+    background: linear-gradient(rgba(16, 34, 63, 0.7), rgba(16, 34, 63, 0.7)),
+        /* Couleur #10223F avec transparence */ url("/images/image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--font-family-CE);
+    gap: 1rem;
+    border-radius: 30px;
+}
+
+.apropos-text {
+    height: 400px;
+    font-family: var(--font-family-CE);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+.p-apropos {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+.img-position {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.div-about-info {
+    display: grid;
+    width: 1400px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: space-around;
+    font-family: var(--font-family-CE);
+}
+.div-about-info i {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    font-size: 30px;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50px;
+}
+.div-about-info p {
+    font-weight: 500;
+    font-size: 20px;
+}
+.side-num {
+    box-shadow: 0px 0px 15px var(--hint-leger-CE);
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .div-about-info {
+        display: grid;
+        width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: space-around;
+        font-family: var(--font-family-CE);
+        padding: 1rem;
+    }
+    .div-about-info i {
+        width: 50px;
+        height: 50px;
+        display: grid;
+        font-size: 25px;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50px;
+    }
+    .div-about-info p {
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+@media ((min-width: 1024px) and (max-width: 1199px)) {
+    .apropos-text {
+        width: 1024px;
+        padding: 1rem;
+    }
+    .p-apropos {
+        font-size: 18px;
+        line-height: 2rem;
+        padding: 2rem;
+    }
+    .div-about-info {
+        display: grid;
+        width: 1024px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: space-around;
+        font-family: var(--font-family-CE);
+    }
+    .div-about-info i {
+        width: 50px;
+        height: 50px;
+        display: grid;
+        font-size: 20px;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50px;
+    }
+}
+
+@media ((min-width: 768px) and (max-width: 1023px)) {
+    .apropos-text {
+        width: 768px;
+        padding: 1rem;
+    }
+    .p-apropos {
+        font-size: 18px;
+        line-height: 2rem;
+        padding: 2rem;
+    }
+    .div-about-info {
+        display: grid;
+        width: 768px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: space-around;
+        font-family: var(--font-family-CE);
+    }
+    .div-about-info i {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        font-size: 20px;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50px;
+    }
+}
+@media ((min-width: 480px) and (max-width: 767px)) {
+    .section-apropos {
+        display: grid;
+        gap: 2rem;
+        grid-template-rows: 1fr auto;
+        justify-content: center;
+        margin-top: 5rem;
+        justify-items: center;
+    }
+    .apropos-text {
+        width: 480px;
+        padding: 1rem;
+    }
+    .p-apropos {
+        font-size: 14px;
+        line-height: 1.5rem;
+        padding: 2rem;
+    }
+    .div-about-info {
+        display: grid;
+        width: 480px;
+        height: 500px;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        justify-content: space-around;
+        font-family: var(--font-family-CE);
+    }
+    .side-num {
+        width: 220px;
+        height: 110px;
+        grid-template-rows: repeat(2, 50px);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .div-about-info i {
+        width: 40px;
+        height: 40px;
+        display: grid;
+        font-size: 18px;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50px;
+    }
+}
+@media ((min-width: 300px) and (max-width: 479px)) {
+    .section-apropos {
+        display: grid;
+        gap: 2rem;
+        grid-template-rows: 1fr auto;
+        justify-content: center;
+        margin-top: 5rem;
+        justify-items: center;
+    }
+    .apropos-text {
+        width: 300px;
+        padding: 1rem;
+    }
+    .p-apropos {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+    .div-about-info {
+        display: grid;
+        width: 300px;
+        height: 400px;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        justify-content: space-around;
+        font-family: var(--font-family-CE);
+    }
+    .side-num {
+        width: 220px;
+        height: 90px;
+        grid-template-rows: repeat(2, 50px);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .div-about-info i {
+        width: 30px;
+        height: 30px;
+        display: grid;
+        font-size: 15px;
+        align-items: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50px;
+    }
+    .div-about-info p {
+        font-size: 12px;
+    }
+}
