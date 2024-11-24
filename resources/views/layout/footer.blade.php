@@ -7,11 +7,11 @@
     <div class="about-info">
         <div class="side-info">
             <i class="fa-solid fa-phone"></i>
-            <p>+221 77 123 12 12</p>
+            <p>+221 77 326 51 71</p>
         </div>
         <div class="side-info side-email">
             <i class="fa-solid fa-envelope"></i>
-            <p>monemail@gmail.com</p>
+            <p>paulbasse10@gmail.com</p>
         </div>
         <div class="side-info side-email">
             <i class="fa-solid fa-location-dot"></i>

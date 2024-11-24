@@ -3,7 +3,7 @@
         <img src="{{ asset("images/logo-gedus.png")}}" alt="" class="logo-gedus">
     </div>
     <div class="navbar-navigation">
-        <a href="/accueil" class="{{ request()->is('accueil') ? 'active' : '' }}">
+        <a href="/" class="{{ request()->is('accueil') ? 'active' : '' }}">
             <div class="nav-item">
                 <p>Accueil</p>
             </div>
