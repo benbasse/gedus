@@ -138,7 +138,7 @@ a {
 .navbar-hamburger span {
     display: block;
     height: 3px;
-    background-color: black;
+    background-color: var(--color-CE);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
