@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
+Route::get('/app', function () {
     return view('layout.app');
 })->name('home');
 
 
-Route::get('/accueil', function () {
+Route::get('/', function () {
     return view('pages.accueil');
 });
 Route::get('/apropos', function () {
